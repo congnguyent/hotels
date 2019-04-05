@@ -1,0 +1,9 @@
+vn\gtd\event\expedia\ContinentCreatedEvent.class
+vn\gtd\event\expedia\product\ProductAddedEvent.class
+vn\gtd\event\expedia\product\ProductUnsaleableEvent.class
+vn\gtd\event\expedia\ContinentCloseEvent.class
+vn\gtd\event\expedia\product\AbstractEvent.class
+vn\gtd\event\expedia\MoneyDepositedEvent.class
+vn\gtd\event\expedia\product\ProductSaleableEvent.class
+vn\gtd\event\expedia\AbstractEvent.class
+vn\gtd\event\expedia\MoneyWithdrawnEvent.class

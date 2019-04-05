@@ -1,0 +1,29 @@
+server:
+  port: 8980
+external:
+  amqp:
+    exchange:
+      fanout:
+        auto-delete: false
+    bind:
+      route-key: "*"
+    queue: product.default.queue
+  event-sourcing:
+    events-collection-name: connectors-events
+    snapshot-collection-name: connectors-events-snapshots
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/metadata
+      database: metadata
+  rabbitmq:
+    host: localhost
+    port: 5672
+    virtual-host: /
+    username: guest
+    password: guest
+axon:
+  amqp:
+    exchange: product.events.fanout.exchange
+    transaction-mode: none
+    durable-messages: true
