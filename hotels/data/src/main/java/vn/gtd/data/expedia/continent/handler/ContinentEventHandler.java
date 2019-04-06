@@ -21,6 +21,7 @@ public class ContinentEventHandler {
 
     @EventHandler
     public void on(ContinentCreatedEvent event) {
+        logger.info("body: events {}", event.getContinentCreator());
         ContinentEntity createdContinent = repository.save(new ContinentEntity(
                 event.getId(),
                 event.getBalance(),

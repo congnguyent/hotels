@@ -7,15 +7,15 @@ external:
         auto-delete: false
     bind:
       route-key: "*"
-    queue: product.default.queue
+    queue: expedia.default.queue
   event-sourcing:
     events-collection-name: connectors-events
     snapshot-collection-name: connectors-events-snapshots
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/metadata
-      database: metadata
+      uri: mongodb://localhost:27017/continents
+      database: continents
   rabbitmq:
     host: localhost
     port: 5672
@@ -24,6 +24,9 @@ spring:
     password: guest
 axon:
   amqp:
-    exchange: product.events.fanout.exchange
+    exchange: expedia.events.fanout.exchange
     transaction-mode: none
     durable-messages: true
+  metrics:
+    auto-configuration:
+      enabled: true
