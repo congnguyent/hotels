@@ -2,11 +2,7 @@ package vn.gtd.data.expedia.configuration;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.rabbitmq.client.Channel;
 import org.axonframework.amqp.eventhandling.AMQPMessageConverter;
 import org.axonframework.amqp.eventhandling.DefaultAMQPMessageConverter;
@@ -29,7 +25,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.transaction.support.ResourceTransactionManager;
 
 @Configuration
-public class AMQPConfiguration {
+public class AxonAMQPConfiguration {
     @Value("${spring.application.index}")
     private Integer index;
 
@@ -45,7 +41,7 @@ public class AMQPConfiguration {
     private final RabbitProperties rabbitProperties;
     private final AMQPProperties amqpProperties;
 
-    public AMQPConfiguration(RabbitProperties rabbitProperties, AMQPProperties amqpProperties) {
+    public AxonAMQPConfiguration(RabbitProperties rabbitProperties, AMQPProperties amqpProperties) {
         this.rabbitProperties = rabbitProperties;
         this.amqpProperties = amqpProperties;
     }

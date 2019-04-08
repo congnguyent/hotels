@@ -27,19 +27,6 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/connectors" />
-        <option name="gradleHome" value="D:/software/gradle-4.10.3" />
-        <option name="gradleJvm" value="1.8" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/connectors" />
-          </set>
-        </option>
-        <option name="useAutoImport" value="true" />
-        <option name="useQualifiedModuleNames" value="true" />
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/data" />
         <option name="gradleHome" value="D:/software/gradle-4.10.3" />
         <option name="modules">

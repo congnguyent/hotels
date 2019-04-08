@@ -4,27 +4,8 @@ spring:
   cloud:
     config:
       server:
-#        native:
-#          search-locations: D:/13-NewHotels/hotels/config
         git:
-          uri: D:/13-NewHotels/hotels/config
-  #          uri: ${CONFIG_REPO_URI:file://D:/13-NewHotels/hotels/config}
-#          clone-on-start: true
-#          username: admin
-#          password: admin
-  security:
-    user:
-      name: admin
-      password: admin123
+          uri: ${CONFIG_REPO_URI:https://github.com/congnguyent/config.git}
+          clone-on-start: true
 server:
   port: ${PORT:8888}
-security:
-  basic:
-    path: /**
-  user:
-    name: admin
-    password: admin123
-management:
-  security:
-    enabled: true
-    sessions: stateless
