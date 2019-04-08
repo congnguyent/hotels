@@ -1,13 +1,13 @@
-package vn.gtd.connectors;
+package vn.gtd.eurekaclients;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ConnectorsApplication {
+public class EurekaClientsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConnectorsApplication.class, args);
+        SpringApplication.run(EurekaClientsApplication.class, args);
     }
 
 }

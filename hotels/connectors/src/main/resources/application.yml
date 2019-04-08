@@ -1,5 +1,5 @@
 server:
-  port: 8980
+  port: ${PORT:8980}
 external:
   amqp:
     exchange:
@@ -14,14 +14,16 @@ external:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/continents
-      database: continents
+      uri: ${MONGODB_URI:mongodb://localhost:27017/continents}
+      database: ${MONGO_DATABASE:continents}
   rabbitmq:
     host: localhost
     port: 5672
     virtual-host: /
     username: guest
     password: guest
+  application:
+    name: connectors
 axon:
   amqp:
     exchange: expedia.events.fanout.exchange
@@ -30,3 +32,11 @@ axon:
   metrics:
     auto-configuration:
       enabled: true
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
