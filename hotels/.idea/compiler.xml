@@ -15,8 +15,10 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="machine-learning" target="1.8" />
-      <module name="vn.gtd.connectors.main" target="1.8" />
-      <module name="vn.gtd.connectors.test" target="1.8" />
+      <module name="vn.gtd.discovery-service.main" target="1.8" />
+      <module name="vn.gtd.discovery-service.test" target="1.8" />
+      <module name="vn.gtd.eureka-clients.main" target="1.8" />
+      <module name="vn.gtd.eureka-clients.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -27,6 +27,18 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/connectors" />
+        <option name="gradleHome" value="D:/software/gradle-4.10.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/connectors" />
+          </set>
+        </option>
+        <option name="useAutoImport" value="true" />
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/data" />
         <option name="gradleHome" value="D:/software/gradle-4.10.3" />
         <option name="modules">
@@ -39,23 +51,11 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/discovery-service" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/zipkin-server" />
         <option name="gradleHome" value="D:/software/gradle-4.10.3" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/discovery-service" />
-          </set>
-        </option>
-        <option name="useAutoImport" value="true" />
-        <option name="useQualifiedModuleNames" value="true" />
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/eureka-clients" />
-        <option name="gradleHome" value="D:/software/gradle-4.10.3" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/eureka-clients" />
+            <option value="$PROJECT_DIR$/zipkin-server" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />

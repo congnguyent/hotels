@@ -23,8 +23,12 @@ List<String> commons = [
         'vn.gtd:commons:1.0-SNAPSHOT'
 ]
 
+List<String> zipkin = [
+        'org.springframework.cloud:spring-cloud-starter-zipkin'
+]
+
 dependencies {
-    implementation commons
+    implementation commons, zipkin
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-aop'
     implementation 'org.springframework.boot:spring-boot-starter-amqp'
