@@ -1,10 +1,16 @@
 package vn.gtd.event.expedia;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class ContinentCreatedEvent extends AbstractEvent{
     private final String continentCreator;
     private final double balance;
 
-    public ContinentCreatedEvent(String id, String continentCreator, double balance) {
+    @JsonCreator
+    public ContinentCreatedEvent(@JsonProperty("id") String id,
+                                 @JsonProperty("continentCreator") String continentCreator,
+                                 @JsonProperty("balance") double balance) {
         super(id);
         this.continentCreator = continentCreator;
         this.balance = balance;
